@@ -1,6 +1,6 @@
 /* start var */
 :root {
-  --main-color: #10cab7;
+  --main-color: #106cca;
   --secandary-color: #2c4755;
   --section-padding: 60px;
   --section-background: #f6f6f6;
@@ -14,18 +14,16 @@
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-
 }
 
 html {
   -ms-scroll-behavior: smooth;
-  -webkit-scroll-behavior: smooth; 
+  -webkit-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
-
+  font-family: "Work Sans", sans-serif;
 }
 
 .container {
@@ -67,7 +65,7 @@ body {
   letter-spacing: -3px;
 }
 
-.special-heading+p {
+.special-heading + p {
   text-align: center;
   margin-top: -30px;
   color: #777;
@@ -75,12 +73,12 @@ body {
   font-size: 20px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .special-heading {
     font-size: 60px;
   }
 
-  .special-heading+p {
+  .special-heading + p {
     margin-top: -20px;
   }
 }
@@ -94,19 +92,24 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 header .logo {
-  width: 60px;
+  width: 100px;
+  color: var(--main-color);
+  display: block;
 }
-
+header .logo span {
+  background-color: var(--main-color);
+  border-right: solid 3px;
+  margin-left: 10px;
+}
 header .links {
   position: relative;
 }
 
 header .links:hover ul {
-  display: block
+  display: block;
 }
 
 header .links:hover .icon span:nth-child(2) {
@@ -133,7 +136,7 @@ header .links .icon span:first-child {
 
 header .links .icon span:nth-child(2) {
   width: 60%;
-  transition: var(--main-duration)
+  transition: var(--main-duration);
 }
 
 header .links .icon span:last-child {
@@ -161,7 +164,6 @@ header .links .icon span:last-child {
   border-color: transparent transparent var(--section-background) transparent;
   border-style: solid;
   border-width: 10px;
-
 }
 
 .links ul li a {
@@ -173,7 +175,7 @@ header .links .icon span:last-child {
 }
 
 .links ul li a:hover {
-  padding-left: 30px
+  padding-left: 30px;
 }
 
 .links ul li:not(:last-child) {
@@ -229,7 +231,6 @@ header .links .icon span:last-child {
   padding: 20px;
   text-align: center;
   margin-bottom: 30px;
-
 }
 
 .feat h3 {
@@ -252,7 +253,6 @@ header .links .icon span:last-child {
 .services {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
-
 }
 
 .services-content {
@@ -265,13 +265,12 @@ header .links .icon span:last-child {
 .services-content .svr {
   display: flex;
   margin-bottom: 40px;
-
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .services-content .svr {
     flex-direction: column;
-    text-align: center
+    text-align: center;
   }
 }
 
@@ -281,14 +280,11 @@ header .links .icon span:last-child {
   padding-right: 10px;
 }
 
-
-
 .services .services-content .srv .text {
   flex: 1;
 }
 
 .services-content .svr .text h3 {
-
   margin: 0 0 20px;
 }
 
@@ -315,7 +311,7 @@ header .links .icon span:last-child {
   z-index: -1;
 }
 
-@media (max-width:1199px) {
+@media (max-width: 1199px) {
   .services .container .image {
     display: none;
   }
@@ -345,16 +341,13 @@ img {
   flex-direction: column;
   background-color: white;
   height: 397px;
-
-
 }
 
 .Portfolio .container .card .info {
   padding: 20px;
-
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .Portfolio .container .card .info {
     text-align: center;
   }
@@ -371,7 +364,6 @@ img {
 
 .Portfolio .container .card img {
   width: 100%;
-
 }
 
 /* end the section of Portfolio */
@@ -401,7 +393,7 @@ img {
 }
 
 .about .about-content .image::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #ebeced;
   width: 100px;
@@ -412,7 +404,7 @@ img {
 }
 
 .about .about-content .image::after {
-  content: '';
+  content: "";
   position: absolute;
   border-left: 80px solid var(--main-color);
   border-bottom: 80px solid var(--main-color);
@@ -423,7 +415,7 @@ img {
   z-index: -1;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .about .about-content {
     flex-direction: column;
     justify-content: center;
@@ -448,7 +440,6 @@ img {
   font-weight: bold;
   padding-bottom: 35px;
   line-height: 2;
-
 }
 
 .about .about-content .text hr {
@@ -476,7 +467,6 @@ img {
 
 .contact .content-contact .info {
   text-align: center;
-
 }
 
 .contact .content-contact .info p:first-child {
@@ -488,8 +478,7 @@ img {
   margin-bottom: 15px;
 }
 
-@media (max-width:767px) {
-
+@media (max-width: 767px) {
   .contact .content-contact .info p:first-child,
   .contact .content-contact .info a {
     font-size: 25px;
