@@ -25,7 +25,9 @@ html {
 body {
   font-family: "Work Sans", sans-serif;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 .container {
   padding-left: 10px;
   padding-right: 10px;
@@ -189,7 +191,7 @@ header .links .icon span:last-child {
   position: relative;
   background-size: cover;
   width: 100%;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-content: center;
@@ -211,6 +213,8 @@ header .links .icon span:last-child {
   width: 320px;
   max-width: 100%;
   text-align: center;
+  font-weight: bold;
+  color: #777;
 }
 
 /*end landing*/
